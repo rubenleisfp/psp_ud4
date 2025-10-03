@@ -1,0 +1,11 @@
+1. ¿Qué código de estado HTTP devolverá una operación que devuelve la lista de usuarios conectados cuando no haya ninguno conectado? ¿Y qué información devolverá en la respuesta?
+	Respuesta: 204 No Content. La respuesta debe ser vacía.
+
+2. ¿Qué código de estado HTTP debe devolver una operación que registra un nuevo usuario en la base de datos? ¿Debe devolver algo como respuesta?
+	Respuesta: 201 Created. La respuesta debe contener la información del nuevo usuario creado.
+
+3. ¿Qué código de estado HTTP devolverá una operación que utiliza el método HTTP DELETE?
+	Respuesta: 204 No Content o 200 OK.
+
+4. ¿Qué código de respuesta HTTP devolverá una operación que sirve para conocer la información de un usuario determinado existente?  ¿Y si no lo encuentra?
+	Respuesta: 200 OK si se encuentra el usuario y 404 Not Found si no existe.

@@ -1,0 +1,32 @@
+text
+1. GET /products - Obtener lista de todos los productos
+
+2. GET /products?category=food - Obtener lista de productos de la categoría "food"
+
+3. GET /products?category=food&price=100 - Obtener lista de productos de la categoría "food" con un precio de 100 unidades monetarias
+
+4. GET /producto?category=food,drink - Obtener lista de productos de la categoría "food" y tipo "drink"
+
+5. GET /product/{productId} - Obtener un producto por su id
+
+6. GET /user/{userId}/orders - Obtener lista de pedidos de un usuario por su id
+
+7. GET /user/{userId}/order/{orderId} - Obtener un pedido de un usuario por su id y el id del pedido
+
+8. POST /products - Crear un nuevo producto
+
+9. POST /user/{userId}/orders - Crear un nuevo pedido para un usuario por su id
+
+10. DELETE /product/{productId} - Eliminar un producto por su id
+
+11. DELETE /user/{userId}/order/{orderId} - Eliminar un pedido de un usuario por su id y el id del pedido
+
+Operaciones de modificación (registro completo)
+12. PUT /product/{productId} - Modificar un producto por su id
+
+13. PUT /user/{userId}/order/{orderId} - Modificar un pedido de un usuario por su id y el id del pedido
+
+Operaciones de modificación parcial
+14. PATCH /product/{productId} - Modificar parcialmente un producto por su id
+
+15. PATCH /user/{userId}/order/{orderId} - Modificar parcialmente un pedido de un usuario por su id y el id del pedido
