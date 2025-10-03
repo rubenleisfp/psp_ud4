@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 public class AppProductApi {
 
-    private final ProductApiCaller apiCaller = new ProductApiCaller("https://dummyjson.com/products");
+    private final ProductApiCaller apiCaller = new ProductApiCallerImpl("https://dummyjson.com/products");
 
     public static void main(String[] args) {
         AppProductApi app = new AppProductApi();

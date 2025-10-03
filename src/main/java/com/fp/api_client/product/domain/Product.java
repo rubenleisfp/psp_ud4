@@ -1,9 +1,14 @@
 package com.fp.api_client.product.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import java.util.List;
 import java.util.Objects;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Product {
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private Integer id;
     private String title;
     private String description;
@@ -26,6 +31,10 @@ public class Product {
     private Meta meta;
     private List<String> images;
     private String thumbnail;
+
+
+
+    private boolean isDeleted;
 
 
     public Integer getId() {
@@ -204,6 +213,14 @@ public class Product {
         this.thumbnail = thumbnail;
     }
 
+    public boolean isDeleted() {
+        return isDeleted;
+    }
+
+    public void setDeleted(boolean deleted) {
+        isDeleted = deleted;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -242,6 +259,7 @@ public class Product {
                 ", meta=" + meta +
                 ", images=" + images +
                 ", thumbnail='" + thumbnail + '\'' +
+                ", isDeleted= " + isDeleted +
                 '}';
     }
 }
