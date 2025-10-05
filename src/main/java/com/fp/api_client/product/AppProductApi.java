@@ -1,10 +1,13 @@
-package com.fp.api_client.product.service;
+package com.fp.api_client.product;
 
 
 
 import com.fp.api_client.product.domain.Category;
 import com.fp.api_client.product.domain.Product;
 import com.fp.api_client.product.domain.ProductPage;
+import com.fp.api_client.product.service.ApiCallException;
+import com.fp.api_client.product.service.ProductApiCaller;
+import com.fp.api_client.product.service.ProductApiCallerImpl;
 import com.fp.api_client.product.util.MockUtils;
 
 import java.io.IOException;
