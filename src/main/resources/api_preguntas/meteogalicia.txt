@@ -1,0 +1,10 @@
+a) ¿Qué método HTTP se utiliza para realizar la llamada?
+
+b)¿Qué código de respuesta devuelve?
+
+C) ¿Qué aparece en payload? ¿Para qué sirve ese dato?
+
+d) ¿Qué se devuelve en response? ¿En qué formato viene ese contenido?
+
+e) Realiza lo mismo para las siguientes URLS:
+

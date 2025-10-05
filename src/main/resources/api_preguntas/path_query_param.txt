@@ -1,17 +1,15 @@
 GET /productos?categoria=electronica&marca=asus
-	//Query Param: categoria, marca
 
 GET /usuarios/1234
-	//PathParam: 1234
+
 
 GET /pedidos?fecha=2024-01-30
-	//Query Param: fecha
+
 
 GET /clientes/456/direcciones
-	//PathParam: 456
+
 
 GET /buscar?nombre=Juan&edad=25
-	//Query Param: nombre, edad
+
 
 DELETE /productos/789
-	//PathParam: 789

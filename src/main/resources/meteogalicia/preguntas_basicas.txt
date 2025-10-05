@@ -1,7 +1,0 @@
-a) ¿Qué método HTTP se utiliza para realizar la llamada? GET
-b)¿Qué código de respuesta devuelve? 200
-C) ¿Qué aparece en payload? ¿Para qué sirve ese dato? idConc: 15030 Parámetro para buscar en la BBDD
-d) ¿Qué se devuelve en response? ¿En qué formato viene ese contenido? el tiempo en Coruña. JSON
-e) Realiza lo mismo para las siguientes URLS:
-https://dogapi.dog/api/v2/breeds
-https://api.chucknorris.io/jokes/random

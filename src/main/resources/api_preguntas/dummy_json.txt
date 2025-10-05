@@ -2,21 +2,21 @@ Consulta los distintos métodos de este API mock de productos  e intenta dar res
 https://dummyjson.com/docs/products
 
 a. ¿Qué código de estado HTTP devolverá una operación que devuelve la lista de productos?
-200
+
 b. ¿Qué código de respuesta HTTP devolverá una operación que sirve para conocer la información de un producto determinado? ¿Y si no lo encuentra?
-200 si se encuentra el producto y 404 Not Found si no existe.
+
 c. ¿Qué código de respuesta HTTP devolverá la búsqueda de productos “laptop”?
-200 OK
+
 d. ¿Encuentras en el API algún queryParam? Escribe la URL
-https://dummyjson.com/products?q=laptop
+
 e. ¿Encuentras en el API algún pathParam? Escribe la URL
-https://dummyjson.com/products/:id
+
 
 Podríamos utilizar curl/postman para probar las operaciones.
 
 f. ¿Qué código de estado HTTP debe devolver una operación que registra un nuevo producto en la base de datos? ¿Debe devolver algo como respuesta?
-201
+
 g. ¿Qué código de estado HTTP y respuesta devolverá una operación que utiliza el método HTTP DELETE?
-204
+
 h. ¿Qué código de respuesta HTTP devolverá para actualizar un producto?
-200
+
