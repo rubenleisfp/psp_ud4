@@ -2,6 +2,7 @@ package com.fp.solid.inyeccion.problem.service;
 
 import com.fp.solid.inyeccion.problem.repository.Employee;
 import com.fp.solid.inyeccion.problem.repository.EmployeeDao;
+import com.fp.solid.inyeccion.problem.repository.impl.EmployeeFileDao;
 import com.fp.solid.inyeccion.problem.repository.impl.EmployeeJdbcDao;
 
 import java.math.BigDecimal;
@@ -15,8 +16,8 @@ public class EmployeeService {
 	//Si solo usamos el DAO en esta clase, solo tenemos que cambiar estar linea, pero ¿y si lo usamos en 40 clases?
 	//Podriamos mejorarlo con la inyeccion de dependencias. Solo una parte de nuestra app debería crear las instancias de componentes
 	//y pasarsela a quien la requiera
-	private EmployeeDao employeeDao = new EmployeeJdbcDao();
-	
+	//private EmployeeDao employeeDao = new EmployeeJdbcDao();
+	private EmployeeDao employeeDao = new EmployeeFileDao("src/main/resources/solid.inyeccion/employees.csv");
 	
 
 	public List<Employee> getEmployeesWithLessSalary(BigDecimal salaryCondition) throws Exception {

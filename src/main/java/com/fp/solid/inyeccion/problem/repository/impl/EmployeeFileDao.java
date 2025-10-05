@@ -138,8 +138,8 @@ public class EmployeeFileDao implements EmployeeDao {
         employee.setId(Long.parseLong(data[0]));
         employee.setName(data[1]);
         employee.setSalary(new BigDecimal(data[2]));
-        String truncatedDateTimeString = data[3].substring(0, 29);
-        employee.setCreatedDate(LocalDateTime.parse(truncatedDateTimeString));
+        LocalDateTime createdDate = LocalDateTime.parse(data[3]);
+        employee.setCreatedDate(createdDate);
         return employee;
     }
 

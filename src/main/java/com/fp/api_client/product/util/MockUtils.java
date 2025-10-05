@@ -19,65 +19,70 @@ public class MockUtils {
     }
 
     public static Product getMockProductWithoutId() {
-        Dimensions dimensions = new Dimensions();
-        dimensions.setWidth(23.17);
-        dimensions.setHeight(14.43);
-        dimensions.setDepth(28.01);
-
-        // Crear los objetos Review
-        Review review1 = new Review();
-        review1.setRating(2);
-        review1.setComment("Very unhappy with my purchase!");
-        review1.setDate("2024-05-23T08:56:21.618Z");
-        review1.setReviewerName("John Doe");
-        review1.setReviewerEmail("john.doe@x.dummyjson.com");
-
-        Review review2 = new Review();
-        review2.setRating(2);
-        review2.setComment("Not as described!");
-        review2.setDate("2024-05-23T08:56:21.618Z");
-        review2.setReviewerName("Nolan Gonzalez");
-        review2.setReviewerEmail("nolan.gonzalez@x.dummyjson.com");
-
-        Review review3 = new Review();
-        review3.setRating(5);
-        review3.setComment("Very satisfied!");
-        review3.setDate("2024-05-23T08:56:21.618Z");
-        review3.setReviewerName("Scarlett Wright");
-        review3.setReviewerEmail("scarlett.wright@x.dummyjson.com");
-
-        List<Review> reviews = Arrays.asList(review1, review2, review3);
-
-        // Crear el objeto Meta
-        Meta meta = new Meta();
-        meta.setCreatedAt("2024-05-23T08:56:21.618Z");
-        meta.setUpdatedAt("2024-05-23T08:56:21.618Z");
-        meta.setBarcode("9164035109868");
-        meta.setQrCode("https://assets.dummyjson.com/public/qr-code.png");
-
-        // Crear el objeto Product
         Product product = new Product();
         product.setTitle("Essence Mascara Lash Princess");
         product.setDescription("The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.");
         product.setCategory("beauty");
         product.setPrice(9.99);
-        product.setDiscountPercentage(7.17);
-        product.setRating(4.94);
-        product.setStock(5);
+        product.setDiscountPercentage(10.48);
+        product.setRating(2.56);
+        product.setStock(99);
         product.setTags(Arrays.asList("beauty", "mascara"));
         product.setBrand("Essence");
-        product.setSku("RCH45Q1A");
-        product.setWeight(2);
+        product.setSku("BEA-ESS-ESS-001");
+        product.setWeight(4);
+        Dimensions dimensions = new Dimensions();
+        dimensions.setWidth(15.14);
+        dimensions.setHeight(13.08);
+        dimensions.setDepth(22.99);
         product.setDimensions(dimensions);
-        product.setWarrantyInformation("1 month warranty");
-        product.setShippingInformation("Ships in 1 month");
-        product.setAvailabilityStatus("Low Stock");
+        product.setWarrantyInformation("1 week warranty");
+        product.setShippingInformation("Ships in 3-5 business days");
+        product.setAvailabilityStatus("In Stock");
+        product.setReturnPolicy("No return policy");
+        product.setMinimumOrderQuantity(48);
+
+        // Create the reviews
+        Review review1 = new Review();
+        review1.setRating(3);
+        review1.setComment("Would not recommend!");
+        review1.setDate("2025-04-30T09:41:02.053Z");
+        review1.setReviewerName("Eleanor Collins");
+        review1.setReviewerEmail("eleanor.collins@x.dummyjson.com");
+
+        Review review2 = new Review();
+        review2.setRating(4);
+        review2.setComment("Very satisfied!");
+        review2.setDate("2025-04-30T09:41:02.053Z");
+        review2.setReviewerName("Lucas Gordon");
+        review2.setReviewerEmail("lucas.gordon@x.dummyjson.com");
+
+        Review review3 = new Review();
+        review3.setRating(5);
+        review3.setComment("Highly impressed!");
+        review3.setDate("2025-04-30T09:41:02.053Z");
+        review3.setReviewerName("Eleanor Collins");
+        review3.setReviewerEmail("eleanor.collins@x.dummyjson.com");
+
+        List<Review> reviews = Arrays.asList(review1, review2, review3);
         product.setReviews(reviews);
-        product.setReturnPolicy("30 days return policy");
-        product.setMinimumOrderQuantity(24);
+
+        // Create the meta
+        Meta meta = new Meta();
+        meta.setCreatedAt("2025-04-30T09:41:02.053Z");
+        meta.setUpdatedAt("2025-04-30T09:41:02.053Z");
+        meta.setBarcode("5784719087687");
+        meta.setQrCode("https://cdn.dummyjson.com/public/qr-code.png");
         product.setMeta(meta);
-        product.setImages(Arrays.asList("https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png"));
-        product.setThumbnail("https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/thumbnail.png");
+
+        // Set the images and thumbnail
+        List<String> images = Arrays.asList(
+                "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp"
+        );
+        product.setImages(images);
+        product.setThumbnail("https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp");
+
+        product.setDeleted(false);
 
         return product;
     }
