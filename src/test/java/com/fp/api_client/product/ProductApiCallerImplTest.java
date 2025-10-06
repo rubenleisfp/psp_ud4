@@ -1,4 +1,4 @@
-package apiclient.service;
+package com.fp.api_client.product;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
