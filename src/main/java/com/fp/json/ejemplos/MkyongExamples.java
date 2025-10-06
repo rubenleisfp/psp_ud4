@@ -29,10 +29,16 @@ public class MkyongExamples {
         throw new UnsupportedOperationException("A implementar por el alumno");
     }
 
-    private static void writeObjectToJsonFile() {
-        throw new UnsupportedOperationException("A implementar por el alumno");
-    }
+    /**
+     *  Escribir un objeto Java en un archivo JSON
+     */
+     private static void writeObjectToJsonFile() {
+     throw new UnsupportedOperationException("A implementar por el alumno");
+     }
 
+     /**
+     * Leer un archivo JSON y convertirlo en un objeto Java
+     */
     private static void readObjectFromJsonFile() {
         throw new UnsupportedOperationException("A implementar por el alumno");
     }
