@@ -1,0 +1,11 @@
+a. ¿Qué habilidades tiene Pikachu?
+https://pokeapi.co/api/v2/pokemon/pikachu
+lightning-rod y static
+
+b.  ¿Podrías indica cuantas Especies de Pokemon son de color amarillo?
+https://pokeapi.co/api/v2/pokemon-color/yellow
+88
+
+c. ¿Cuántos Pokemon hay de tipo fuego?
+https://pokeapi.co/api/v2/type/fire
+103
