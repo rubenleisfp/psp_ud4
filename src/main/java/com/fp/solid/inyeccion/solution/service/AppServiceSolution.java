@@ -22,8 +22,6 @@ public class AppServiceSolution {
 		}
 	}
 
-
-
 	/**
 	 * Configuramos los componentes que utilizaremos en nuestra app:
 	 * 
